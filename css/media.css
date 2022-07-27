@@ -64,6 +64,14 @@
             left: 0;
             text-align: center;
         }
+        .notfound header .navbar-collapse{
+            padding-top: 20px;
+        }
+        .notfound header .menu-fixo .navbar-collapse{
+            padding-top: 0px;
+            background-color: rgba(0, 0, 0, .6);
+            margin-top: 20px;
+        }
 
         .banner{
             background-size: cover;
@@ -345,6 +353,13 @@
         .oriental .oriental__text a {
             font-size: 15px;
             padding: 15px 65px;
+        }
+        .page404 h1{
+            font-size: 130px;
+        }
+        .page404 .page404__content--icons .statistics__content--icon7, 
+        .page404 .page404__content--icons .statistics__content--icon8 {
+            left: -30px;
         }
     }
 /* ------------------------------ */
