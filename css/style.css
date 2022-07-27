@@ -1,0 +1,972 @@
+
+/* AJUSTES GERAIS */
+    * {
+        margin: 0;
+        padding: 0;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+        outline: -webkit-focus-ring-color auto 0px !important;
+        outline: 0;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    img{
+        max-width: 100%;
+    }
+    .semantica{
+        font-size: 0em;
+        display: none; 
+        margin: 0;
+    }
+
+    @keyframes Bellpepper {
+        0% {
+            transform: rotate(0);
+        }
+        50% {
+            transform: rotate(-20deg);
+        }
+        100% {
+            transform: rotate(0);
+        }
+    }
+    @keyframes Onion {
+        0% {
+            transform: rotate(0);
+        }
+        50% {
+            transform: rotate(20deg);
+        }
+        100% {
+            transform: rotate(0);
+        }
+    }
+    @keyframes Tomate {
+        0% {
+            transform: rotate(0);
+        }
+        50% {
+            transform: rotate(-10deg);
+        }
+        100% {
+            transform: rotate(0);
+        }
+    }
+    @keyframes Cilantro {
+        0% {
+            transform: rotate(0);
+        }
+        50% {
+            transform: rotate(10deg);
+        }
+        100% {
+            transform: rotate(0);
+        }
+    }
+/* END AJUSTES GERAIS */
+
+/* HEADER */
+    header {
+        position:fixed;
+        width: 100%;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0);
+        z-index: 9;
+    }
+    header .cabecalho{
+        margin-top: 70px;
+        transition: all .2s;
+    }
+    header .cabecalho .cabecalho__menu{
+        position: relative;
+        left: 240px;
+    }
+    header .cabecalho .cabecalho__menu ul{
+        margin: 0;
+    }
+    header .cabecalho .cabecalho__menu .menuActive{
+        color: #ffc200;
+    }
+    header .cabecalho .cabecalho__menu li a{
+        color: #ffffff;
+        font-size: 23px;
+        padding: 0px 25px;
+        font-weight: 300;
+        transition: all .2s;
+    }
+    header .cabecalho .cabecalho__menu li a:hover{
+        color: #ffc200;
+        text-decoration: none;
+        transition: all .2s;
+    }
+    /* Menu Fixo - Efeito */
+    header #menu-header{
+        transition: all .2s;
+    }
+    header .menu-fixo{
+        background-color: rgba(0, 0, 0, .6);
+        transition: all .2s;
+    }
+    header .menu-fixo .cabecalho{
+        margin-top: 0;
+        padding: 30px;
+        transition: all .2s;
+    }
+/* END HEADER */
+
+/* FOOTER */
+    footer{
+        background-color: #303030;
+        height: auto;
+        color: #ffffff;
+        padding-top: 200px;
+        padding-bottom: 100px;
+    }
+    footer .footer__text h2{
+        font-size: 23px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    footer .footer__text p{
+        font-size: 20px;
+        padding-right: 40px;
+    }
+    footer .footer__social a{
+        color: #303030;
+        background-color: #ffffff;
+        border-radius: 50%;
+        width: 45px;
+        height: 45px;
+        margin-right: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    footer .footer__social a i{
+        font-size: 25px;
+    }
+    footer .footer__text--menus h2{
+        font-size: 23px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    footer .footer__text--menus li{
+        list-style: none;
+        padding-bottom: 10px;
+    }
+    footer .footer__text--menus li a{
+        color: #ffffff;
+        font-size: 18px;
+    }
+    footer .footer__text--menus li a:hover{
+        font-weight: 600;
+        text-decoration: none;
+    }
+    footer .about{
+        position: relative;
+        left: 40px;
+        width: 175px;
+    }
+    footer .other{
+        position: relative;
+        right: 40px;
+        width: 110px;
+    }
+    footer .services{
+        width: 175px;
+    }
+    footer .footer__social a{
+        transition: all .3s;
+    }
+    footer .footer__social a:hover{
+        color: #ffffff;
+        text-decoration: none;
+        transition: all .3s;
+    }
+    footer .footer__social .instagram:hover {
+        background-image: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    }
+    footer .footer__social .facebook:hover {
+        background-image: radial-gradient(circle at 30% 107%, #3b5998 0%, #3b5998 5%, #3b5998 45%, #3b5998 60%, #3b5998 90%);
+    }
+    footer .footer__social .twitter:hover {
+        background-image: radial-gradient(circle at 30% 107%, #1DA1F2 0%, #1DA1F2 5%, #1DA1F2 45%, #1DA1F2 60%, #1DA1F2 90%);
+    }
+    footer .footer__social .whatsapp:hover {
+        background-image: radial-gradient(circle at 30% 107%, #25D366 0%, #25D366 5%, #25D366 45%, #25D366 60%, #25D366 90%);
+    }
+    footer .copyright{
+        color: #ffffff;
+    }
+    footer .copyright a{
+        color: #ffffff;
+    }
+    footer .copyright .develop img{
+        width: 110px;
+        transition: all .3s;
+    }
+    footer .copyright .develop img:hover{
+        transform: scale(1.3);
+        transition: all .3s;
+    }
+/* FOOTER */
+
+/* BANNER */
+    .banner{
+        background-image: url('../images/talharim.jpg');
+        background-position: left;
+        background-size: contain;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    .banner .banner__image{
+        position: absolute;
+        right: 0;
+        width: 75%;
+        height: 100vh;
+        background-image: url('../images/banner-fundo.png');
+        background-position: center;
+        background-size: cover;
+    }
+    .banner .banner__image .banner__content{
+        width: 50%;
+    }
+    .banner .banner__image .banner__content h2{
+        font-family: 'Grand Hotel', cursive;
+        color: #ffc200;
+        font-size: 120px;
+    }
+    .banner .banner__image .banner__content p{
+        color: #fff;
+        font-size: 28px;
+        line-height: 32px;
+        text-shadow: 2px 2px #0000007d;
+    }
+    .banner .banner__image .banner__content a {
+        color: #333333;
+        font-size: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: #ffc200;
+        padding: 15px 75px;
+        border-radius: 10px;
+    }
+    .banner .banner__image .banner__content a:hover{
+        background: #ffc200;
+        color: #333333;
+        box-shadow: 0 0 5px #ffc200,
+                    0 0 25px #ffc200,
+                    0 0 50px #ffc200,
+                    0 0 200px #ffc200;
+        text-decoration: none;
+    }
+    .banner .banner__image .banner__content--icons{
+        position: relative;
+    }
+    .banner .banner__image .banner__content--icons .banner__content--icon1{
+        position: absolute;
+        top: -120px;
+        right: 70px;
+        width: 100px;
+        animation: Bellpepper 2s linear infinite;
+    }
+    .banner .banner__image .banner__content--icons .banner__content--icon2{
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100px;
+    }
+    .banner .banner__image .banner__content--icons .banner__content--icon3{
+        position: absolute;
+        top: 300px;
+        width: 100px;
+        animation: Onion 2s linear infinite;
+    }
+    .banner .banner__image .banner__content--icons .banner__content--icon4{
+        position: absolute;
+        top: 450px;
+        left: -40px;
+        width: 100px;
+    }
+    .banner .banner__image .banner__content--icons .banner__content--icon5{
+        position: absolute;
+        top: 400px;
+        right: 80px;
+        width: 100px;
+    }
+    .banner .banner__image .banner__content--icons .banner__content--icon6{
+        position: absolute;
+        top: 400px;
+        right: 200px;
+        width: 200px;
+        animation: Tomate 2s linear infinite;
+    }
+    .banner .banner__image .banner__content--icons .banner__content--icon7{
+        position: absolute;
+        top: 400px;
+        right: 550px;
+        width: 100px;
+    }
+    .banner .banner__image .banner__content--icons .banner__content--icon8{
+        position: absolute;
+        top: 100px;
+        right: 650px;
+        width: 200px;
+        animation: Cilantro 2s linear infinite;
+    }
+    .banner .banner__image .banner__content--icons .banner__content--icon9{
+        position: absolute;
+        top: -120px;
+        right: 530px;
+        width: 100px;
+    }
+    /* Efeito seta para baixo banner. */
+        .container2 {
+            display: block;
+            position: absolute;
+            text-align: center;
+            left: 50%;
+            transform: translateY(-50%);
+            bottom: 0;
+            opacity: 1;
+            z-index: 999;
+            width: 55px;
+            height: 65px;
+            @media screen and (min-width: 768px) and (max-width: 1366px){
+                top: 27%;
+                left: 49.8%;
+            }
+            @media screen and (min-width: 1366px) and (max-width: 1440px){
+                top: 31% !important;
+            }
+            @media screen and (min-width: 1680px) and (max-width: 1920px){
+                top: 35%;
+                left: 50.5%;
+            }
+            @media screen and (min-width: 1930px) and (max-width: 2560px){
+                top: 36%;
+                left: 50.8%;
+            }
+        }
+        .chevron {
+            position: absolute;
+            width: 32px;
+            height: 8px;
+            opacity: 0;
+            transform: scale3d(0.5, 0.5, 0.5);
+            animation: move 3s ease-out infinite;
+        }
+        .chevron:first-child {
+            animation: move 3s ease-out 1s infinite;
+        }
+        .chevron:nth-child(2) {
+            animation: move 3s ease-out 2s infinite;
+        }
+        .chevron:before,
+        .chevron:after {
+            content: ' ';
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 51%;
+            background: #fff;
+        }
+        .chevron:before {
+            left: 0;
+            transform: skew(0deg, 30deg);
+        }
+        .chevron:after {
+            right: 0;
+            width: 50%;
+            transform: skew(0deg, -30deg);
+        }
+        @keyframes move {
+            25% {
+            opacity: 1;
+
+            }
+            33% {
+            opacity: 1;
+            transform: translateY(30px);
+            }
+            67% {
+            opacity: 1;
+            transform: translateY(40px);
+            }
+            100% {
+            opacity: 0;
+            transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+            }
+        }
+    /* --------------------- */
+/* END BANNER */
+
+
+
+/* SESSÃO 2 - BESTSELLER */
+    .bestseller .bestseller__intro h2{
+        font-family: 'Grand Hotel', cursive;
+        color: #333333;
+        font-size: 65px;
+    }
+    .bestseller .bestseller__intro p{
+        color: #333333;
+        font-size: 20px;
+        padding: 0 10%;
+    }
+    .bestseller .bestseller__content .bestseller__content--box .bestseller__content--image{
+        overflow: hidden;
+        border-radius: 50%;
+        width: 245px;
+        height: 245px;
+        margin: auto;
+    }
+    .bestseller .bestseller__content .bestseller__content--box .bestseller__content--image img{
+        object-fit: cover;
+        object-position: top;
+        transition: all 0.3s;
+        transition: all 0.3s;
+    }
+    .bestseller .bestseller__content .bestseller__content--box:hover .bestseller__content--image img{
+        -moz-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        transition: all 0.3s;
+    }
+    .bestseller .bestseller__content .bestseller__content--box h2{
+        font-family: 'Grand Hotel', cursive;
+        color: #333333;
+        font-size: 40px;
+    }
+    .bestseller .bestseller__content .bestseller__content--box p{
+        color: #333333;
+        font-size: 20px;
+    }
+/* END SESSÃO 2 - BESTSELLER */
+
+/* SESSÃO 3 - Oriental Taste */
+    .oriental{
+        background-image: url('../images/sessao3-fundo.png');
+        background-position: top;
+        background-size: cover;
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        height: auto;
+    }
+    .oriental .row{
+        padding-top: 200px;
+    }
+    .oriental .oriental__image{
+        width: 445px;
+        height: 445px;
+        margin: auto;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: all 0.3s;
+        padding: 0;
+    }
+    .oriental .oriental__image img{
+        transition: all 0.3s;
+    }
+    .oriental .oriental__image img:hover{
+        -moz-transform: scale(1.3);
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        transition: all 0.3s;
+    }
+    .oriental .oriental__text{
+        position: relative;
+        top: 90px;
+        left: 90px;
+    }
+    .oriental .oriental__text h2{
+        font-family: 'Grand Hotel', cursive;
+        color: #ffc200;
+        font-size: 110px;
+    }
+    .oriental .oriental__text p{
+        color: #fff;
+        font-size: 23px;
+        line-height: 32px;
+    }
+    .oriental .oriental__text a{
+        color: #333333;
+        font-size: 23px;
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: #ffc200;
+        padding: 15px 75px;
+        border-radius: 10px;
+    }
+    .oriental .oriental__text a:hover{
+        background: #ffc200;
+        color: #333333;
+        box-shadow: 0 0 5px #ffc200,
+                    0 0 25px #ffc200,
+                    0 0 50px #ffc200,
+                    0 0 200px #ffc200;
+        text-decoration: none;
+    }
+/* END SESSÃO 3 - Oriental Taste */
+
+/* SESSÃO 4 - STATISTICS */
+    .statistics{
+        background-color: #303030;
+        width: 100%;
+        height: auto;
+        padding-top: 140px;
+        padding-bottom: 150px;
+    }
+    .statistics .statistics__text{
+        position: relative;
+        z-index: 2;
+    }
+    .statistics .statistics__text .row{
+        position: relative;
+        z-index: 2;
+    }
+    .statistics .statistics__text h2{
+        font-family: 'Grand Hotel', cursive;
+        color: #ffc200;
+        font-size: 110px;
+    }
+    .statistics .statistics__text p{
+        color: #fff;
+        font-size: 23px;
+        line-height: 32px;
+        text-shadow: 2px 2px #000000a6;
+    }
+    .statistics .statistics__numbers{
+        margin-bottom: 30px;
+    }
+    .statistics .statistics__numbers--box{
+        position: relative;
+        border: 5px solid #FFF;
+        height: 225px;
+        width: 225px;
+        border-radius: 50%;
+    }
+    .statistics .statistics__numbers--box p{
+        color: #ffc200;
+        font-size: 48px;
+        font-weight: bold;
+    }
+    .statistics .statistics__numbers--box h3{
+        font-size: 28px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: #ffffff;        
+    }
+    .statistics .statistics__content--icons{
+        position: relative;
+        z-index: 1;
+    }
+    .statistics .statistics__content--icons .statistics__content--icon1{
+        position: absolute;
+        bottom: 530px;
+        right: 50px;
+        animation: Bellpepper 2s linear infinite;
+    }
+    .statistics .statistics__content--icons .statistics__content--icon2{
+        position: absolute;
+        bottom: 400px;
+        right: -90px;
+    }
+    .statistics .statistics__content--icons .statistics__content--icon3{
+        position: absolute;
+        bottom: 100px;
+        right: -150px;
+        animation: Onion 2s linear infinite;
+    }
+    .statistics .statistics__content--icons .statistics__content--icon4{
+        position: absolute;
+        top: 50px;
+        right: -50px;
+    }
+    .statistics .statistics__content--icons .statistics__content--icon5{
+        position: absolute;
+        top: 20px;
+        right: 265px;
+        animation: Tomate 2s linear infinite;
+    }
+    .statistics .statistics__content--icons .statistics__content--icon6{
+        position: absolute;
+        top: 0px;
+        left: 220px;
+        animation: Bellpepper 2s linear infinite;
+    }
+    .statistics .statistics__content--icons .statistics__content--icon6 img{
+        transform: rotate(90deg);
+    }
+    .statistics .statistics__content--icons .statistics__content--icon7{
+        position: absolute;
+        top: 100px;
+        left: -100px;
+    }
+    .statistics .statistics__content--icons .statistics__content--icon8{
+        position: absolute;
+        bottom: 340px;
+        left: -100px;
+        animation: Cilantro 2s linear infinite;
+    }
+    .statistics .statistics__content--icons .statistics__content--icon9{
+        position: absolute;
+        bottom: 540px;
+        left: 200px;
+    }
+
+/* SESSÃO 4 - STATISTICS */
+
+/* SESSÃO 5 - CHIKEN GRILL */
+    .chikenGrill{
+        background-image: url('../images/sessao5-fundo.png');
+        background-position: bottom;
+    }
+    .chikenGrill .oriental__text{
+        top: 0;
+        left: 0px;
+    }
+/* END SESSÃO 5 - CHIKEN GRILL */
+
+/* SESSÃO 6 - MESSAGE */
+    .message{
+        background-image: url('../images/talharim-3.jpg');
+        background-position: top;
+        background-size: cover;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        height: auto;
+        margin-top: 150px;
+    }
+    .message::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: linear-gradient(300deg, #ffc200 100%, #ffc200 100%);
+        mix-blend-mode: screen;
+    }
+    .message .message__text{
+        position: relative;
+        z-index: 3;
+        padding: 200px 0;
+    }
+    .message .message__text p{
+        font-size: 43px;
+        color: #303030;
+        line-height: 50px;
+        font-weight: 400;
+    }
+    .message .message__text h2{
+        font-family: 'Grand Hotel', cursive;
+        font-size: 72px;
+        font-weight: 500;
+    }
+/* END SESSÃO 6 - MESSAGE */
+
+/* SESSÃO 7 - SUBSCRIBE */
+    .subscribe{
+        background-color: #f4f4f4;
+        height: auto;
+        padding-bottom: 200px;
+    }
+    .subscribe .subscribe__content{
+        position: relative;
+        z-index: 2;
+    }
+    .subscribe .subscribe__content h2{
+        font-family: 'Grand Hotel', cursive;
+        font-size: 100px;
+        color: #303030;
+    }
+    .subscribe .subscribe__content p{
+        font-size: 30px;
+        color: #303030;
+    }
+    .subscribe .subscribe__form{
+        position: relative;
+        z-index: 2;
+    }
+    .subscribe .subscribe__form input{
+        color: #939393;
+        height: 60px;
+        width: 550px;
+        border: none;
+        padding-left: 25px;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    .subscribe .subscribe__form input::-webkit-input-placeholder{
+        font-size: 20px;
+        color: #939393;
+    }
+    .subscribe .subscribe__form input::-moz-placeholder{
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+    .subscribe .subscribe__form button{
+        font-size: 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        padding: 15px 30px;
+        background-color: #ffc200;
+        border: none;
+        color: #303030;
+        position: relative;
+        top: 1px;
+        right: 3px;
+        border-bottom-right-radius: 5px;
+        border-top-right-radius: 5px;
+        transition: all .2s;
+    }
+    .subscribe .subscribe__form button:hover{
+        background: #333333;
+        color: #ffc200;
+        text-decoration: none;
+        transition: all .2s;
+    }
+    .subscribe .statistics__content--icons{
+        position: relative;
+        z-index: 1;
+    }
+    .subscribe .statistics__content--icons .statistics__content--icon1{
+        position: absolute;
+        bottom: 380px;
+        right: 50px;
+        animation: Bellpepper 2s linear infinite;
+    }
+    .subscribe .statistics__content--icons .statistics__content--icon2{
+        position: absolute;
+        bottom: 230px;
+        right: -90px;
+    }
+    .subscribe .statistics__content--icons .statistics__content--icon3{
+        position: absolute;
+        bottom: -50px;
+        right: -150px;
+        animation: Onion 2s linear infinite;
+    }
+    .subscribe .statistics__content--icons .statistics__content--icon4{
+        position: absolute;
+        top: 120px;
+        right: -50px;
+    }
+    .subscribe .statistics__content--icons .statistics__content--icon5{
+        position: absolute;
+        top: 65px;
+        right: 265px;
+        animation: Tomate 2s linear infinite;
+    }
+    .subscribe .statistics__content--icons .statistics__content--icon6{
+        position: absolute;
+        top: 75px;
+        left: 220px;
+        animation: Bellpepper 2s linear infinite;
+    }
+    .subscribe .statistics__content--icons .statistics__content--icon6 img{
+        transform: rotate(90deg);
+    }
+    .subscribe .statistics__content--icons .statistics__content--icon7{
+        position: absolute;
+        top: 130px;
+        left: -100px;
+    }
+    .subscribe .statistics__content--icons .statistics__content--icon8{
+        position: absolute;
+        bottom: 205px;
+        left: -100px;
+        animation: Cilantro 2s linear infinite;
+    }
+    .subscribe .statistics__content--icons .statistics__content--icon9{
+        position: absolute;
+        bottom: 415px;
+        left: 200px;
+    }
+/* END SESSÃO 7 - SUBSCRIBE */
+
+/* PAGE 404 */
+    .notfound header{
+        background-color: rgba(0, 0, 0, .6);
+        transition: all .2s;
+    }
+    .notfound header .menu-fixo{
+        background-color: rgba(0, 0, 0, .0);
+        transition: all .2s;
+    }
+    .notfound header .cabecalho{
+        height: 70px;
+        margin-top: 30px;
+    }
+    .notfound header .menu-fixo .cabecalho{
+        padding: 0;
+        height: 70px;
+    }
+    .notfound .page404 {
+        padding: 200px 0;
+    }
+    .page404{
+        min-height: 90vh;
+        /* background-image: linear-gradient(125deg, #ffc200, #ec5020b6); */
+        background-color: #303030;
+    }
+    .page404 .container{
+        width: 100%;
+        top: 50%;
+        text-align: center;
+        color: #fff;
+    }
+    .page404 article{
+        padding-top: 100px;
+    }
+    .page404 h1{
+        font-size: 160px;
+        margin: 0;
+        font-weight: 900;
+        letter-spacing: 20px;
+        /* background: url('../images/talharim-2.jpg') center no-repeat; */
+        background-image: linear-gradient(125deg, #ffc200, #ec5020b6);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+    }
+    .page404 a{
+        text-decoration: none;
+        background: #e55039aa;
+        color: #fff;
+        padding: 12px 24px;
+        display: inline-block;
+        border-radius: 25px;
+        font-size: 14px;
+        text-transform: uppercase;
+        transition: 0.4s;
+    }
+    .page404 a:hover{
+        background: #e55039;
+    }
+    .page404 .page404__content--icons{
+        position: relative;
+    }
+    .page404 .page404__content--icons .statistics__content--icon1{
+        position: absolute;
+        bottom: 320px;
+        right: 0;
+        animation: Bellpepper 2s linear infinite;
+    }
+    .page404 .page404__content--icons .statistics__content--icon2{
+        position: absolute;
+        bottom: 130px;
+        right: 100px;
+    }
+    .page404 .page404__content--icons .statistics__content--icon3{
+        position: absolute;
+        bottom: -100px;
+        right: 100px;
+        animation: Onion 2s linear infinite;
+    }
+    .page404 .page404__content--icons .statistics__content--icon4{
+        position: absolute;
+        top: 70px;
+        right: 300px;
+    }
+    .page404 .page404__content--icons .statistics__content--icon5{
+        position: absolute;
+        top: 80px;
+        right: 465px;
+        animation: Tomate 2s linear infinite;
+    }
+    .page404 .page404__content--icons .statistics__content--icon6{
+        position: absolute;
+        top: 20px;
+        left: 170px;
+        animation: Bellpepper 2s linear infinite;
+    }
+    .page404 .page404__content--icons .statistics__content--icon6 img{
+        transform: rotate(90deg);
+    }
+    .page404 .page404__content--icons .statistics__content--icon7{
+        position: absolute;
+        top: -115px;
+        left: 40px;
+    }
+    .page404 .page404__content--icons .statistics__content--icon8{
+        position: absolute;
+        bottom: 300px;
+        left: 70px;
+        animation: Cilantro 2s linear infinite;
+    }
+    .page404 .page404__content--icons .statistics__content--icon9{
+        position: absolute;
+        bottom: 380px;
+        left: 520px;
+    }
+/* END PAGE 404 */
+
+/* Efeitos de animação */
+	/* Efeito Subir */
+	    .E-subir{
+	    	opacity: 0;
+	    	transform: translate3d(0,100px,0);
+	    	transition: all 2s;
+	    }
+	    .E-subir-start{
+    		opacity: 1;
+    		transform: translate3d(0,0,0);
+    		transition: all 2s;
+    	}
+    /* ------------- */
+    /* Efeito Descer */
+	    .E-descer{
+	    	opacity: 0;
+	    	transform: translate3d(0,-100px,0);
+	    	transition: all 3s;
+	    }
+	    .E-descer-start{
+    		opacity: 1;
+    		transform: translate3d(0,0,0);
+    		transition: all 3s;
+    	}
+    /* ------------- */
+    /* Efeito direita */
+	    .E-direita{
+	    	opacity: 0;
+	    	transform: translate3d(-100px,0,0);
+	    	transition: all 2s;
+	    }
+	    .E-direita-start{
+    		opacity: 1;
+    		transform: translate3d(0,0,0);
+    		transition: all 2s;
+    	}
+    /* ------------- */
+    /* Efeito esquerda */
+	    .E-esquerda{
+	    	opacity: 0;
+	    	transform: translate3d(100px,0,0);
+	    	transition: all 2s;
+	    }
+	    .E-esquerda-start{
+    		opacity: 1;
+    		transform: translate3d(0,0,0);
+    		transition: all 2s;
+    	}
+    /* ------------- */
+    /* Efeito Fadein */
+	    .E-fadein{
+	    	opacity: 0;
+	    	transform: translate3d(0,0,0);
+	    	transition: all 2s;
+	    }
+	    .E-fadein-start{
+	    	opacity: 1;
+	    	transform: translate3d(0,0,0);
+    		transition: all 2s;
+	    }
+    /* ------------- */
+/* ---------------------- */
