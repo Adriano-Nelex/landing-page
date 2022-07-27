@@ -825,6 +825,8 @@
     }
     .page404 article{
         padding-top: 100px;
+        position: relative;
+        z-index: 2;
     }
     .page404 h1{
         font-size: 160px;
@@ -852,6 +854,7 @@
     }
     .page404 .page404__content--icons{
         position: relative;
+        z-index: 1;
     }
     .page404 .page404__content--icons .statistics__content--icon1{
         position: absolute;
