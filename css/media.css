@@ -113,6 +113,26 @@
         .subscribe .subscribe__form button{
             border-radius: 5px;
         }
+        .page404 .page404__content--icons .statistics__content--icon2{
+            right: 0;
+        }
+        .page404 .page404__content--icons .statistics__content--icon3{
+            right: 50px;
+        }
+        .page404 .page404__content--icons .statistics__content--icon5{
+            right: auto;
+        }
+        .page404 .page404__content--icons .statistics__content--icon6{
+            display: none;
+        }
+        .page404 .page404__content--icons .statistics__content--icon7,
+        .page404 .page404__content--icons .statistics__content--icon8{
+            left: 0;
+        }
+        .page404 .page404__content--icons .statistics__content--icon9{
+            left: 300px;
+        }
+
         footer .about{
             left: 15px;
         }
@@ -128,6 +148,44 @@
         .banner .banner__image .banner__content--icons .banner__content--icon1 {
             right: 0;
         }
+        .banner .banner__image .banner__content--icons .banner__content--icon2 {
+            right: auto;
+            left: -45px;
+        }
+        .banner .banner__image .banner__content--icons .banner__content--icon3{
+            right: 0;
+        }
+        .banner .banner__image .banner__content--icons .banner__content--icon4{
+            display: none;
+        }
+        .statistics .statistics__content--icons .statistics__content--icon2{
+            right: -50px;
+        }
+        .statistics .statistics__content--icons .statistics__content--icon3{
+            right: -75px;
+        }
+        .statistics .statistics__content--icons .statistics__content--icon4{
+            display: none;
+        }
+        .statistics .statistics__content--icons .statistics__content--icon5{
+            right: 0;
+        }
+        .statistics .statistics__content--icons .statistics__content--icon7{
+            top: 0;
+        }
+        .subscribe .statistics__content--icons .statistics__content--icon1,
+        .subscribe .statistics__content--icons .statistics__content--icon2,
+        .subscribe .statistics__content--icons .statistics__content--icon3,
+        .subscribe .statistics__content--icons .statistics__content--icon4{
+            right: 0;
+        }
+        .subscribe .statistics__content--icons .statistics__content--icon5{
+            right: 200px;
+        }
+        .subscribe .statistics__content--icons .statistics__content--icon6{
+            display: none;
+        }
+
         .subscribe .subscribe__form input{
             width: 100%;
         }
@@ -153,8 +211,9 @@
             top: 430px;
         }
         .banner .banner__image .banner__content--icons .banner__content--icon3{
-            top: 275px;
-            left: -30px;
+            top: 340px;
+            right: 0;
+            left: auto;
         }
         .banner .banner__image .banner__content--icons .banner__content--icon8 {
             right: 290px;
@@ -170,6 +229,9 @@
         .statistics .statistics__content--icons .statistics__content--icon3{
             bottom: 200px;
             right: 0;
+        }
+        .statistics .statistics__content--icons .statistics__content--icon4{
+            display: none;
         }
         .statistics .statistics__content--icons .statistics__content--icon5{
             top: -25px;
@@ -204,6 +266,16 @@
         }
         .subscribe .statistics__content--icons .statistics__content--icon5{
             right: 300px;
+        }
+        .subscribe .statistics__content--icons .statistics__content--icon2{
+            display: none;
+        }
+        .subscribe .statistics__content--icons .statistics__content--icon4{
+            display: none;
+        }
+
+        .page404 .page404__content--icons .statistics__content--icon9{
+            display: none;
         }
     }
 
@@ -243,7 +315,7 @@
         footer .services{
             left: 15px;
             position: relative;
-            width: 100%;
+            width: 80%;
         }
         footer .other{
             right: 0;
@@ -251,7 +323,7 @@
         }
     }
 
-    @media (max-width: 410px) {
+    @media (max-width: 415px) {
         .banner .banner__image .banner__content h2 {
             font-size: 80px;
         }
