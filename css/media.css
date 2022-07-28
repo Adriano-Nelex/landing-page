@@ -392,4 +392,13 @@
             font-size: 18px;
         }
     }
+    
+    @media (max-height: 560px) {
+        header .cabecalho{
+            margin-top: 20px;
+        }
+        .banner .banner__image .banner__content{
+            margin-top: -50px;
+        }
+    }
 /* ------------------------------ */
