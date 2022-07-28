@@ -14,4 +14,4 @@ Projeto Criado para propositos educacionais, para aprimoramento de staks e skill
 
 </br>
 
-<h3>Acesse o Link do Projeto: <a href="https://adriano-nelex.github.io/landing-page/" target="_blank">https://adriano-nelex.github.io/landing-page/</a></h3>
+<h3>Acesse o Link do Projeto: <a href="https://adriano-nelex.github.io/landing-page/" target="_blanck">https://adriano-nelex.github.io/landing-page/</a></h3>
