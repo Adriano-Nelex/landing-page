@@ -371,12 +371,25 @@
         }
     }
 
-    @media (max-height: 780px) {
+    @media (max-height: 800px) {
+        .container2 {
+            left: 43%;
+            bottom: 50px;
+        }
         .banner .banner__image .banner__content--icons .banner__content--icon1 {
             top: 0px;
         }
         .banner .banner__image .banner__content--icons .banner__content--icon2{
             top: 160px;
+        }
+    }
+    
+    @media (max-height: 680px) {
+        .banner .banner__image .banner__content h2 {
+            font-size: 70px;
+        }
+        .banner .banner__image .banner__content p {
+            font-size: 18px;
         }
     }
 /* ------------------------------ */
