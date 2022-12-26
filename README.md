@@ -1,7 +1,9 @@
 ## Landing-Page
+<h3>Acesse o Link do Projeto: <a href="https://adriano-nelex.github.io/landing-page/" target="_self">https://adriano-nelex.github.io/landing-page/</a></h3>
+
 Landing Page Criada com HTML, CSS e Javascript. Utilizando CDN's como Bootstrap para responsividade, Fontawesome para alguns icones e Google Fonts para fontes do projeto.
 
-Projeto Criado para propositos educacionais, para aprimoramento de staks e skills explorando e aplicando alguns conceitos como:</br>
+Projeto Criado para propositos educacionais e aprimoramento de staks e skills, explorando e aplicando alguns conceitos como:</br>
     
 <div>
   <ul>
@@ -11,7 +13,3 @@ Projeto Criado para propositos educacionais, para aprimoramento de staks e skill
     <li>Javascript e Jquery - Para comportamentos interativos na pagina web.</li>
   </ul>
 </div>
-
-</br>
-
-<h3>Acesse o Link do Projeto: <a href="https://adriano-nelex.github.io/landing-page/" target="_self">https://adriano-nelex.github.io/landing-page/</a></h3>
