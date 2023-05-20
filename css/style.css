@@ -358,7 +358,7 @@ footer .copyright .develop img:hover {
   z-index: 999;
   width: 55px;
   height: 65px;
-  @media screen and (min-width: 768px) and (max-width: 1366px) {
+  /* @media screen and (min-width: 768px) and (max-width: 1366px) {
     top: 27%;
     left: 49.8%;
   }
@@ -372,7 +372,7 @@ footer .copyright .develop img:hover {
   @media screen and (min-width: 1930px) and (max-width: 2560px) {
     top: 36%;
     left: 50.8%;
-  }
+  } */
 }
 .chevron {
   position: absolute;
